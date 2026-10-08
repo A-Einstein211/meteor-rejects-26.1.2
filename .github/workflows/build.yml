@@ -30,7 +30,7 @@ jobs:
       run: ./gradlew build
 
     - name: Upload JAR
-      uses: actions/upload-artifact@v4
+      uses: actions/upload-artifact@v6
       with:
         name: meteor-rejects
         path: build/libs/*.jar
